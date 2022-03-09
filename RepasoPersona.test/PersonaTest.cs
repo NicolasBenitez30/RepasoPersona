@@ -3,7 +3,7 @@ using Xunit;
 
 namespace RepasoPersona.test
 {
-    public class UnitTest1
+    public class PersonaTest
     {
         [Fact]
         public void Test1()
