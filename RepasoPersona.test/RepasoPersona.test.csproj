@@ -20,7 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="RepasoPersona.Test.csproj" />
+    <ProjectReference Include="..\RepasoPersona.Core\RepasoPersona.Core.csproj" />
   </ItemGroup>
 
 </Project>
