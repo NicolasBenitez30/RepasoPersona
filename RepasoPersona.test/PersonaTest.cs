@@ -53,5 +53,16 @@ namespace RepasoPersona.Test
             var ex = Assert.Throws<InvalidOperationException>(() => Pepito.Debitar(1000));
             Assert.Equal("El monto supera al efectivo.", ex.Message);
         }
+
+        public Cuenta MercadoPago { get; set; } 
+        public Cuenta Paypal { get; set; }
+        
+        [Fact]
+        public double SumaCuentas()
+        {
+            MercadoPago = new Cuenta(1241, 400);
+            Paypal = new Cuenta(31241, 787);
+            return Pepito.SaldoCuentas;
+        }
     }
 }

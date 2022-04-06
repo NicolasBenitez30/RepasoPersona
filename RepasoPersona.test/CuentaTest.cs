@@ -8,7 +8,7 @@ namespace RepasoPersona.test
     {
         public Cuenta MercadoPago { get; set; }
 
-        public CuentaTest() => MercadoPago = new Cuenta(000010);
+        public CuentaTest() => MercadoPago = new Cuenta(000010, 0);
 
         [Fact]
         public void Constructor()
